@@ -36,6 +36,9 @@ const NavIcons = styled.div`
         color: rgb(115, 115, 115);
         font-weight: 500;
         font-size: 3rem;
+        &:hover {
+          color: var(--border-color);
+        }
       }
     }
   }

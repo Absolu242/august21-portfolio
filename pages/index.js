@@ -11,8 +11,7 @@ export default function Home() {
         <h1>{`Hi , I'm Rahan`}</h1>
         <p className='paraph'>
           {` I'm a Frontend Web Developer ,with a strong entrepreneurial spirit in
-          love with Web Design and like to learn new things. I'm currently in my
-          senior year of computer science !`}
+          love with Web Design and like to learn new things. My Goal is to grow as a developer and then move to higher responsibility roles like project manager  :) !`}
           <br /> <br />
         </p>
         <div>

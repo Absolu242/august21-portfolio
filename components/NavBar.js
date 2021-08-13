@@ -97,6 +97,9 @@ const NavIcons = styled.div`
         color: var(--grey-color);
         font-weight: 500;
         font-size: 3rem;
+        &:hover {
+          color: var(--border-color);
+        }
       }
     }
   }

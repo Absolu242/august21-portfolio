@@ -40,10 +40,10 @@ export default function Project({ item }) {
       </a>
       <p className='tech'>{item.tech}</p>
       <div className='links'>
-        <a href={item.live}>
+        <a href={item.live} target='_blank' rel='noopener noreferrer'>
           <i className='bx bxl-chrome' />
         </a>
-        <a href={item.github}>
+        <a href={item.github} target='_blank' rel='noopener noreferrer'>
           <i className='bx bxl-github' />
         </a>
       </div>
