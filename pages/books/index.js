@@ -26,7 +26,7 @@ const Grid = styled.div`
   grid-template-columns: repeat(2, 1fr);
   width: 100%;
   gap: 5rem;
-  padding: 2rem 0;
+  padding: 5rem 0;
 
   h1 {
     font-size: 6rem;
@@ -46,13 +46,13 @@ const Grid = styled.div`
 
   .book {
     font-size: 1.6rem;
+    padding: 2rem 0;
   }
 
   .grid-el {
     display: flex;
     flex-direction: column;
     text-align: center;
-    justify-content: center;
   }
 
   @media (max-width: 765px) {
@@ -69,7 +69,7 @@ export default function index() {
         <Grid>
           <div className='tech grid-el'>
             {/* <h2>Tech Books</h2> */}
-            <h3>Currently reading :</h3>
+            <h3>Currently reading (tech) :</h3>
             {booksList
               .filter((item) => item.tech && item.current)
               .map((book, index) => (
@@ -89,7 +89,7 @@ export default function index() {
           </div>
           <div className='nontech grid-el'>
             {/* <h2>Non-Tech Books</h2> */}
-            <h3>Currently reading :</h3>
+            <h3>Currently reading (non tech) :</h3>
             {booksList
               .filter((item) => !item.tech && item.current)
               .map((book, index) => (
@@ -116,7 +116,6 @@ export default function index() {
 const Book = ({ book }) => {
   return (
     <div className='book'>
-      <img src='' alt='' />
       <p>{book.name} </p>
       <i>{book.author}</i>
     </div>

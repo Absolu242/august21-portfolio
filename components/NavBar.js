@@ -1,3 +1,4 @@
+import { useRouter } from "next/dist/client/router"
 import Link from "next/link"
 import styled from "styled-components"
 
@@ -31,13 +32,30 @@ const NavList = styled.div`
         color: var(--grey-color);
         font-weight: 500;
         font-size: 1.8rem;
+
+        &.active {
+          color: var(--border-color) !important;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 765px) {
+    &.center {
+      justify-content: center;
+      ul {
+        li {
+          a {
+            margin: 2rem;
+          }
+        }
       }
     }
   }
 
   .nav-btn {
     padding: 1rem 1.5rem;
-    border-radius: 20px;
+    border-radius: 25px;
     background-color: var(--border-color);
     border: none;
     color: white !important;
@@ -59,6 +77,16 @@ const NavIcons = styled.div`
     align-items: center;
     flex-wrap: wrap;
 
+    @media (max-width: 765px) {
+      &.center {
+        li {
+          a {
+            margin: 2rem;
+          }
+        }
+      }
+    }
+
     p {
       font-size: 1.5rem;
       font-weight: 600;
@@ -75,28 +103,34 @@ const NavIcons = styled.div`
 `
 
 export default function NavBar() {
+  const router = useRouter()
+
+  const { pathname } = router
+
   return (
     <Nav>
-      <NavLogo>
+      <NavLogo className='center'>
         <p>Rahan Bouess</p>
       </NavLogo>
 
-      <NavList>
+      <NavList className='center'>
         <ul>
           <li>
             <Link href='/'>
-              <a>Home</a>
+              <a className={pathname === "/" ? "active" : ""}>Home</a>
             </Link>
           </li>
 
           <li>
             <Link href='/projects'>
-              <a>Projects</a>
+              <a className={pathname === "/projects" ? "active" : ""}>
+                Projects
+              </a>
             </Link>
           </li>
           <li>
-            <Link href='/education'>
-              <a>Books & Eductaion</a>
+            <Link href='/books'>
+              <a className={pathname === "/books" ? "active" : ""}>Books </a>
             </Link>
           </li>
         </ul>
@@ -113,9 +147,9 @@ export default function NavBar() {
       </NavList>
 
       <NavIcons>
-        <ul>
+        <ul className='center'>
           <li>
-            <a href=''>
+            <a href='https://twitter.com'>
               {" "}
               <i className='bx bxl-twitter' />
             </a>

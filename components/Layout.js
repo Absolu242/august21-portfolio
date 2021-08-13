@@ -43,7 +43,7 @@ const NavIcons = styled.div`
 
 export default function Layout({ children }) {
   return (
-    <Wrapper>
+    <Wrapper className='pd-main'>
       <NavBar />
       {children}
       <Footer>
@@ -52,19 +52,19 @@ export default function Layout({ children }) {
         <NavIcons>
           <ul>
             <li>
-              <a href='/'>
+              <a href='https://twitter.com'>
                 {" "}
                 <i className='bx bxl-twitter' />
               </a>
             </li>
             <li>
-              <a href='/'>
+              <a href='https://linkedin.com/in/rahan-bakala-bouess-25714a204'>
                 {" "}
                 <i className='bx bxl-linkedin-square' />
               </a>
             </li>
             <li>
-              <a href='/'>
+              <a href='https://github.com/Absolu242'>
                 {" "}
                 <i className='bx bxl-github' />
               </a>

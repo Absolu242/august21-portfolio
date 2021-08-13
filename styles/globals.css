@@ -42,3 +42,14 @@ h6 {
 p {
   color: var(--grey-color);
 }
+
+@media (max-width: 768px) {
+  .pd-main {
+    padding: 0 2rem;
+  }
+
+  .center {
+    text-align: center;
+    justify-content: center;
+  }
+}

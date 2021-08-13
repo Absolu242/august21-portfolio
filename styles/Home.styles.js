@@ -12,7 +12,7 @@ export const HomeSection = styled.section`
     h2 {
       font-size: 2.2rem;
       padding-top: 1rem;
-      border-bottom: 5px solid #f8ccc4;
+      border-bottom: 5px solid var(--border-color);
       width: fit-content;
     }
 
@@ -21,16 +21,19 @@ export const HomeSection = styled.section`
       font-family: "IBM Plex Sans";
       text-align: justify;
 
-      .paraph {
+      &S.paraph {
         padding: 2rem 0;
       }
-      .stack {
+      &.stack {
         font-size: 1.8rem;
         font-weight: 500;
         //color: rgb(5, 5, 5);
-        padding-top: 1rem ;
+        padding: 1rem 0;
       }
-      }
+    }
+
+    @media (max-width: 765px) {
+      max-width: 100%;
     }
   }
 `

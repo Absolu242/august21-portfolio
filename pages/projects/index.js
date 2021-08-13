@@ -27,7 +27,7 @@ const Grid = styled.div`
   grid-template-columns: repeat(2, 1fr);
   width: 100%;
   gap: 5rem;
-  padding: 2rem 0;
+  padding: 5rem 0;
 
   h1 {
     font-size: 6rem;
