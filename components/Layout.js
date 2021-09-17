@@ -20,6 +20,7 @@ export const Footer = styled.footer`
   p {
     font-size: 15px;
     font-weight: 600;
+    color: rgb(115, 115, 115);
   }
 `
 const NavIcons = styled.div`
@@ -50,7 +51,7 @@ export default function Layout({ children }) {
       <NavBar />
       {children}
       <Footer>
-        <p>Thanks for visiting.</p>
+        <p>Connect with me on linkedin ! Thanks for visiting.</p>
 
         <NavIcons>
           <ul>

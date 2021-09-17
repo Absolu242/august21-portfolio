@@ -1,19 +1,33 @@
 import styled from "styled-components"
 
 const Container = styled.div`
+  position:relative;
   max-width: 350px;
-
+  text-align:center;
   img {
     width: 100%;
-    border: 1px solid var(--grey-color);
+    border: 1px solid #000;
   }
+
+  .state{
+    background-color:${props => props.live=== "#" ?"#de350b" :   "#00875a"};
+    width:fit-content;
+    border-radius:10px;
+    padding:.2rem 1rem;
+    margin-bottom:1rem;
+    font-weight:bold;
+    font-size:1.2rem;
+   
+  }
+
+
 
   p {
     font-size: 1.8rem;
     padding-bottom: 1rem;
     &.name {
       font-weight: 600;
-      color: rgb(5, 5, 5);
+      color:  var(--border-color);
     }
   }
 
@@ -21,9 +35,9 @@ const Container = styled.div`
     a {
       padding-right: 1rem;
       font-size: 3rem;
-      color: var(--grey-color);
+      color: var(--border-color);
       &:hover {
-        color: var(--border-color);
+        color: var(--grey-color);
       }
     }
   }
@@ -31,9 +45,10 @@ const Container = styled.div`
 
 export default function Project({ item }) {
   return (
-    <Container>
-      {" "}
+    <Container live={item.live}>
+    <p className='state'>{item.live === "#" ? "In Development" : "Deployed"}</p>
       <a href={item.live} target='_blank' rel='noopener noreferrer'>
+       
         <img src={item.image} alt={item.name} />
 
         <p className='name'>{item.name}</p>

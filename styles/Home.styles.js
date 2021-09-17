@@ -7,6 +7,10 @@ export const HomeSection = styled.section`
 
     h1 {
       font-size: 4rem;
+     
+      span{
+        color: var(--border-color);;
+      }
     }
 
     h2 {
@@ -14,12 +18,17 @@ export const HomeSection = styled.section`
       padding-top: 1rem;
       border-bottom: 5px solid var(--border-color);
       width: fit-content;
+      margin-bottom:2rem;
     }
 
     p {
       font-size: 2rem;
       font-family: "IBM Plex Sans";
       text-align: justify;
+
+      span{
+        color: var(--border-color);;
+      }
 
       &S.paraph {
         padding: 2rem 0;

@@ -12,7 +12,7 @@ const NavLogo = styled.div`
   p {
     font-size: 3rem;
     font-weight: 500;
-    color: rgb(5, 5, 5);
+   
   }
 `
 const NavList = styled.div`
@@ -61,7 +61,7 @@ const NavList = styled.div`
     color: white !important;
     font-weight: 600;
     &:hover {
-      background: none;
+      background-color: #fff;
       color: var(--border-color);
     }
   }
@@ -87,10 +87,15 @@ const NavIcons = styled.div`
       }
     }
 
-    p {
-      font-size: 1.5rem;
-      font-weight: 600;
-    }
+   button{
+     background:none;
+     border:none;
+     color:#fff;
+     font-size: 1.5rem;
+     font-weight: 600;
+    cursor:pointer
+    outline:none;
+   }
     li {
       a {
         margin-right: 2rem;
@@ -125,16 +130,16 @@ export default function NavBar() {
           </li>
 
           <li>
-            <Link href='/projects'>
-              <a className={pathname === "/projects" ? "active" : ""}>
+           
+              <a href='#projects' className={pathname === "/projects" ? "active" : ""}>
                 Projects
               </a>
-            </Link>
+           
           </li>
           <li>
-            <Link href='/books'>
-              <a className={pathname === "/books" ? "active" : ""}>Books </a>
-            </Link>
+          
+              <a href='#books' className={pathname === "/books" ? "active" : ""}>Books </a>
+          
           </li>
         </ul>
 
@@ -169,7 +174,10 @@ export default function NavBar() {
               <i className='bx bxl-github' />
             </a>
           </li>
-          <p>rahanbouess@outlook.com</p>
+         <button onClick={()=> window.location = "mailto:rahanbouess@outlook.com"}>
+         rahanbouess@outlook.com
+           </button>
+          <p></p>
         </ul>
       </NavIcons>
     </Nav>
