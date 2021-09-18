@@ -24,7 +24,9 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="top-right"></div>
+          <div className="top-right">
+          <img src='./header.png' alt='header'/>
+          </div>
         </div>
 
         <div>

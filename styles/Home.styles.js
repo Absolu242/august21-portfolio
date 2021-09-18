@@ -3,8 +3,7 @@ import styled from "styled-components"
 export const HomeSection = styled.section`
   &.about {
     width: 100%;
-    max-width: 60%;
-
+    
     h1 {
       font-size: 4rem;
      
@@ -39,10 +38,48 @@ export const HomeSection = styled.section`
         //color: rgb(5, 5, 5);
         padding: 1rem 0;
       }
+
+    
     }
+
+  
+    .top{
+      
+      position:relative;
+      display:flex;
+      width:100%;
+      justify-content:space-between;
+      align-items:center;
+
+      &-left{
+        max-width: 40%;
+
+      }
+
+      &-right{
+        img{
+          width:500px;
+        }
+      }
+    }
+
+
 
     @media (max-width: 765px) {
       max-width: 100%;
+
+      .top{
+
+      &-left{
+        max-width: 100%;
+
+      }
+
+      &-right{
+        display: none;
+       
+      }
+    }
     }
   }
 `

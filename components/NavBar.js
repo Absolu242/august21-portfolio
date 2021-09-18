@@ -4,7 +4,7 @@ import styled from "styled-components"
 
 const Nav = styled.div`
   position: relative;
-  padding: 3rem 0;
+  padding: 8rem 0 3rem 0;
 `
 const NavLogo = styled.div`
   position: relative;
@@ -145,7 +145,7 @@ export default function NavBar() {
 
         <button className='nav-btn'>
           <a
-            href='https://drive.google.com/file/d/1MgwG4s6tPCfDH1uoS6n7dA4G0wJdTfQU/view?usp=sharing'
+            href='https://drive.google.com/file/d/1lSSnZD-FR6xsOfN5KJcn39arTe4Bis2x/view?usp=sharing'
             target='_blank'
             rel='noopener noreferrer'
           >
