@@ -55,12 +55,7 @@ export default function Layout({ children }) {
 
         <NavIcons>
           <ul>
-            <li>
-              <a href='https://twitter.com'>
-                {" "}
-                <i className='bx bxl-twitter' />
-              </a>
-            </li>
+           
             <li>
               <a href='https://linkedin.com/in/rahan-bakala-bouess-25714a204'>
                 {" "}

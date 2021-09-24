@@ -1,20 +1,19 @@
-import { useRouter } from "next/dist/client/router"
-import Link from "next/link"
-import styled from "styled-components"
+import { useRouter } from "next/dist/client/router";
+import Link from "next/link";
+import styled from "styled-components";
 
 const Nav = styled.div`
   position: relative;
   padding: 8rem 0 3rem 0;
-`
+`;
 const NavLogo = styled.div`
   position: relative;
 
   p {
     font-size: 3rem;
     font-weight: 500;
-   
   }
-`
+`;
 const NavList = styled.div`
   position: relative;
   display: flex;
@@ -65,7 +64,7 @@ const NavList = styled.div`
       color: var(--border-color);
     }
   }
-`
+`;
 
 const NavIcons = styled.div`
   position: relative;
@@ -87,15 +86,15 @@ const NavIcons = styled.div`
       }
     }
 
-   button{
-     background:none;
-     border:none;
-     color:#fff;
-     font-size: 1.5rem;
-     font-weight: 600;
-    cursor:pointer
-    outline:none;
-   }
+    button {
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 1.5rem;
+      font-weight: 600;
+      cursor: pointer;
+      outline: none;
+    }
     li {
       a {
         margin-right: 2rem;
@@ -108,78 +107,76 @@ const NavIcons = styled.div`
       }
     }
   }
-`
+`;
 
 export default function NavBar() {
-  const router = useRouter()
+  const router = useRouter();
 
-  const { pathname } = router
+  const { pathname } = router;
 
   return (
     <Nav>
-      <NavLogo className='center'>
+      <NavLogo className="center">
         <p>Rahan Bouess</p>
       </NavLogo>
 
-      <NavList className='center'>
+      <NavList className="center">
         <ul>
           <li>
-            <Link href='/'>
+            <Link href="/">
               <a className={pathname === "/" ? "active" : ""}>Home</a>
             </Link>
           </li>
 
           <li>
-           
-              <a href='#projects' className={pathname === "/projects" ? "active" : ""}>
-                Projects
-              </a>
-           
+            <a
+              href="#projects"
+              className={pathname === "/projects" ? "active" : ""}
+            >
+              Projects
+            </a>
           </li>
           <li>
-          
-              <a href='#books' className={pathname === "/books" ? "active" : ""}>Books </a>
-          
+            <a href="#books" className={pathname === "/books" ? "active" : ""}>
+              Books{" "}
+            </a>
           </li>
         </ul>
 
-        <button className='nav-btn'>
+        <button className="nav-btn">
           <a
-            href='https://drive.google.com/file/d/1lSSnZD-FR6xsOfN5KJcn39arTe4Bis2x/view?usp=sharing'
-            target='_blank'
-            rel='noopener noreferrer'
+            href="https://drive.google.com/file/d/1vuyphpoC0CCRlgISwi1eYQpK-bvu2hFP/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Get My Resume{" "}
+            Get My Resume
           </a>
         </button>
       </NavList>
 
       <NavIcons>
-        <ul className='center'>
+        <ul className="center">
+         
           <li>
-            <a href='https://twitter.com'>
+            <a href="https://linkedin.com/in/rahan-bakala-bouess-25714a204">
               {" "}
-              <i className='bx bxl-twitter' />
+              <i className="bx bxl-linkedin-square" />
             </a>
           </li>
           <li>
-            <a href='https://linkedin.com/in/rahan-bakala-bouess-25714a204'>
+            <a href="https://github.com/Absolu242">
               {" "}
-              <i className='bx bxl-linkedin-square' />
+              <i className="bx bxl-github" />
             </a>
           </li>
-          <li>
-            <a href='https://github.com/Absolu242'>
-              {" "}
-              <i className='bx bxl-github' />
-            </a>
-          </li>
-         <button onClick={()=> window.location = "mailto:rahanbouess@outlook.com"}>
-         rahanbouess@outlook.com
-           </button>
+          <button
+            onClick={() => (window.location = "mailto:rahanbouess@outlook.com")}
+          >
+            rahanbouess@outlook.com
+          </button>
           <p></p>
         </ul>
       </NavIcons>
     </Nav>
-  )
+  );
 }
