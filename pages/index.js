@@ -17,28 +17,28 @@ export default function Home() {
             <p className="paraph">
               I'm a <span>Frontend</span> Web Developer ,with a strong
               entrepreneurial spirit in love with Web Design and like to{" "}
-              <span>learn </span>new things. My Goal is to <span> grow </span>{" "}
-              as a developer and then move to higher responsibility roles like
-              project manager :) !
+              <span>learn </span>new things and grow by facing challenges and
+              solving problems.
+              <br />
+              <br /> Feel free to take a look around and drop me a message on
+              LinkedIn <br /> I'm always Happy to connect 😃
               <br /> <br />
             </p>
           </div>
-
-          <div className="top-right">
-          <img src='./header.png' alt='header'/>
-          </div>
         </div>
 
-        <div>
-          <br />
-          <br />
-          <h2>What I use :</h2>
-          <p className="stack">
-            HTML, CSS, Sass, React, Nextjs, Redux <br />
-            Node, Express, MongoDB, React Native,
-            <br />
-            Jest, Git /Github, Formik, Redux-toolkit
-          </p>
+        <div className="tech">
+          <div className="content">
+            <div className="title">
+              <h2>Tech I work With :</h2>
+            </div>
+            <p className="stack">
+              HTML, CSS, SCSS, React, Nextjs, <br />
+              Node, Express, MongoDB, React Native,
+              <br />
+              Jest, Git /Github, Formik, Redux, Redux-toolkit
+            </p>
+          </div>
         </div>
         <br />
 
@@ -47,4 +47,5 @@ export default function Home() {
       <Projects />
       <Books />
     </Layout>
-  )}
+  );
+}

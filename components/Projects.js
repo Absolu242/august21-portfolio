@@ -1,11 +1,17 @@
-import styled from "styled-components"
-import Project from "./Project"
-import { projectsList } from "../data/projects.data"
+import styled from "styled-components";
+import Project from "./Project";
+import { projectsList } from "../data/projects.data";
 
 const Container = styled.div`
   position: relative;
   min-height: 100vh;
-  padding-top:5rem;
+  padding-top: 5rem;
+
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
   .heading {
     display: flex;
@@ -26,8 +32,7 @@ const Container = styled.div`
     border-bottom: 5px solid var(--border-color);
     width: fit-content;
   }
-
-`
+`;
 
 const Grid = styled.div`
   position: relative;
@@ -50,18 +55,20 @@ const Grid = styled.div`
   @media (max-width: 765px) {
     grid-template-columns: 1fr;
   }
-`
+`;
 export default function Projects() {
   return (
-      <Container id='projects'>
-      <h2>My Projects :</h2>
-        <Grid>
-          {projectsList.map((project, index) => (
-            <div className='grid-el' key={index}>
-              <Project item={project} />
-            </div>
-          ))}
-        </Grid>
-      </Container>
-  )
+    <Container id="projects">
+      <div className="title">
+        <h2>My Work :</h2>
+      </div>
+      <Grid>
+        {projectsList.map((project, index) => (
+          <div className="grid-el" key={index}>
+            <Project item={project} />
+          </div>
+        ))}
+      </Grid>
+    </Container>
+  );
 }

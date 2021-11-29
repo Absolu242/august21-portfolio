@@ -1,28 +1,29 @@
 export const projectsList = [
   {
     id: "0",
-    name: "My Portfolio",
-    tech: "Next js,styled-components..",
-    live: "https://rahanbouess.com",
-    github: "https://github.com/Absolu242/august21-portfolio",
-    image: "portfolio.jpg",
+    name: "Online Learning Platform",
+    tech: "Reactjs,styled-components..",
+    live: "https://learningui.netlify.app",
+    github: "#",
+    image: "learn.jpg",
+    private: true,
   },
 
   {
     id: "1",
-    name: "CADAS Social media paltform",
-    tech: "Reactjs,Redux-toolkit,styled-components ...",
-    live: "#",
-    github: "#",
-    image: "social.jpg",
+    name: "Rogan Digital Agency",
+    tech: "Nextjs,styled-components ...",
+    live: "https://rogandigital.netlify.app",
+    github: "https://github.com/Absolu242/rogan",
+    image: "rogan.jpg",
   },
   {
     id: "2",
-    name: "ERP system for University",
-    tech: "Next js,styled-components,Formik ...",
-    live: "#",
+    name: "Airbnb Clone",
+    tech: "Next js,styled-components",
+    live: "https://airbclone.netlify.app",
     github: "#",
-    image: "erp.jpg",
+    image: "airbnb.jpg",
   },
 
   {
@@ -51,4 +52,4 @@ export const projectsList = [
     github: "https://github.com/Absolu242/shila",
     image: "shila.jpg",
   },
-]
+];

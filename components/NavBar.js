@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const Nav = styled.div`
   position: relative;
-  padding: 8rem 0 3rem 0;
+  padding: 2rem 0 3rem 0;
 `;
 const NavLogo = styled.div`
   position: relative;
@@ -32,7 +32,8 @@ const NavList = styled.div`
         font-weight: 500;
         font-size: 1.8rem;
 
-        &.active {
+        &.active,
+        &:hover {
           color: var(--border-color) !important;
         }
       }
@@ -59,9 +60,9 @@ const NavList = styled.div`
     border: none;
     color: white !important;
     font-weight: 600;
+    cursor: pointer;
     &:hover {
-      background-color: #fff;
-      color: var(--border-color);
+      opacity: 0.5;
     }
   }
 `;
@@ -133,7 +134,7 @@ export default function NavBar() {
               href="#projects"
               className={pathname === "/projects" ? "active" : ""}
             >
-              Projects
+              Work
             </a>
           </li>
           <li>
@@ -143,20 +144,18 @@ export default function NavBar() {
           </li>
         </ul>
 
-        <button className="nav-btn">
-          <a
-            href="https://drive.google.com/file/d/1vuyphpoC0CCRlgISwi1eYQpK-bvu2hFP/view?usp=sharing"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Get My Resume
-          </a>
-        </button>
+        <a
+          href="https://drive.google.com/file/d/1vuyphpoC0CCRlgISwi1eYQpK-bvu2hFP/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {" "}
+          <button className="nav-btn">Get My Resume</button>
+        </a>
       </NavList>
 
       <NavIcons>
         <ul className="center">
-         
           <li>
             <a href="https://linkedin.com/in/rahan-bakala-bouess-25714a204">
               {" "}

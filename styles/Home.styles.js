@@ -1,14 +1,14 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const HomeSection = styled.section`
   &.about {
     width: 100%;
-    
+
     h1 {
       font-size: 4rem;
-     
-      span{
-        color: var(--border-color);;
+
+      span {
+        color: var(--border-color);
       }
     }
 
@@ -17,7 +17,7 @@ export const HomeSection = styled.section`
       padding-top: 1rem;
       border-bottom: 5px solid var(--border-color);
       width: fit-content;
-      margin-bottom:2rem;
+      margin-bottom: 2rem;
     }
 
     p {
@@ -25,61 +25,62 @@ export const HomeSection = styled.section`
       font-family: "IBM Plex Sans";
       text-align: justify;
 
-      span{
-        color: var(--border-color);;
+      span {
+        color: var(--border-color);
       }
 
       &S.paraph {
         padding: 2rem 0;
       }
-      &.stack {
-        font-size: 1.8rem;
-        font-weight: 500;
-        //color: rgb(5, 5, 5);
-        padding: 1rem 0;
-      }
-
-    
     }
 
-  
-    .top{
-      
-      position:relative;
-      display:flex;
-      width:100%;
-      justify-content:space-between;
-      align-items:center;
+    .top {
+      position: relative;
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      height: 70vh;
 
-      &-left{
-        max-width: 40%;
-
+      &-left {
+        max-width: 80%;
       }
+    }
 
-      &-right{
-        img{
-          width:500px;
+    .tech {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      .content {
+        .title {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .stack {
+          text-align: center;
+          font-size: 1.8rem;
+          font-weight: 500;
+          padding: 1rem 0;
         }
       }
     }
 
-
-
     @media (max-width: 765px) {
       max-width: 100%;
 
-      .top{
+      .top {
+        &-left {
+          max-width: 100%;
+        }
 
-      &-left{
-        max-width: 100%;
-
+        &-right {
+          display: none;
+        }
       }
-
-      &-right{
-        display: none;
-       
-      }
-    }
     }
   }
-`
+`;

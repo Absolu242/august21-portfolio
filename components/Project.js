@@ -1,33 +1,31 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 const Container = styled.div`
-  position:relative;
+  position: relative;
   max-width: 350px;
-  text-align:center;
+  text-align: center;
   img {
     width: 100%;
-  
+    margin-bottom: 1rem;
   }
 
-  .state{
-    background-color:${props => props.live=== "#" ?"#de350b" :   "#00875a"};
-    width:fit-content;
-    border-radius:10px;
-    padding:.2rem 1rem;
-    margin-bottom:1rem;
-    font-weight:bold;
-    font-size:1.2rem;
-   
+  .state {
+    background-color: ${(props) =>
+      props.live === "#" ? "#de350b" : "#00875a"};
+    width: fit-content;
+    border-radius: 10px;
+    padding: 0.2rem 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 1.2rem;
   }
-
-
 
   p {
     font-size: 1.8rem;
     padding-bottom: 1rem;
     &.name {
       font-weight: 600;
-      color:  var(--border-color);
+      color: #6d6d78;
     }
   }
 
@@ -41,27 +39,28 @@ const Container = styled.div`
       }
     }
   }
-`
+`;
 
 export default function Project({ item }) {
   return (
     <Container live={item.live}>
-    <p className='state'>{item.live === "#" ? "In Development" : "Deployed"}</p>
-      <a href={item.live} target='_blank' rel='noopener noreferrer'>
-       
+      {/* <p className="state">
+        {item.live === "#" ? "In Development" : "Deployed"}
+      </p> */}
+      <a href={item.live} target="_blank" rel="noopener noreferrer">
         <img src={item.image} alt={item.name} />
 
-        <p className='name'>{item.name}</p>
+        <p className="name">{item.name}</p>
       </a>
-      <p className='tech'>{item.tech}</p>
-      <div className='links'>
-        <a href={item.live} target='_blank' rel='noopener noreferrer'>
-          <i className='bx bxl-chrome' />
+      <p className="tech">{item.tech}</p>
+      <div className="links">
+        <a href={item.live} target="_blank" rel="noopener noreferrer">
+          <i className="bx bxl-chrome" />
         </a>
-        <a href={item.github} target='_blank' rel='noopener noreferrer'>
-          <i className='bx bxl-github' />
+        <a href={item.github} target="_blank" rel="noopener noreferrer">
+          <i className="bx bxl-github" />
         </a>
       </div>
     </Container>
-  )
+  );
 }
