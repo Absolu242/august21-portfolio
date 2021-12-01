@@ -1,5 +1,15 @@
 export const projectsList = [
   {
+    id: "01",
+    name: "E-commerce Dashboard",
+    tech: "Reactjs,styled-components..",
+    live: "https://ecomboard.netlify.app",
+    github: "#",
+    image: "board.jpg",
+    private: true,
+  },
+
+  {
     id: "0",
     name: "Online Learning Platform",
     tech: "Reactjs,styled-components..",
