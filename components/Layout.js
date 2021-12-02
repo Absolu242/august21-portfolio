@@ -1,12 +1,13 @@
-import React from "react"
-import styled from "styled-components"
-import NavBar from "./NavBar"
+import React from "react";
+import styled from "styled-components";
+import Meta from "./Meta";
+import NavBar from "./NavBar";
 
 export const Wrapper = styled.div`
   max-width: 1000px;
   margin: 0 auto;
   width: 100%;
-`
+`;
 
 export const Footer = styled.footer`
   position: relative;
@@ -22,7 +23,7 @@ export const Footer = styled.footer`
     font-weight: 600;
     color: rgb(115, 115, 115);
   }
-`
+`;
 const NavIcons = styled.div`
   position: relative;
 
@@ -43,11 +44,12 @@ const NavIcons = styled.div`
       }
     }
   }
-`
+`;
 
 export default function Layout({ children }) {
   return (
-    <Wrapper className='pd-main'>
+    <Wrapper className="pd-main">
+      <Meta />
       <NavBar />
       {children}
       <Footer>
@@ -55,22 +57,21 @@ export default function Layout({ children }) {
 
         <NavIcons>
           <ul>
-           
             <li>
-              <a href='https://linkedin.com/in/rahan-bakala-bouess-25714a204'>
+              <a href="https://linkedin.com/in/rahan-bakala-bouess-25714a204">
                 {" "}
-                <i className='bx bxl-linkedin-square' />
+                <i className="bx bxl-linkedin-square" />
               </a>
             </li>
             <li>
-              <a href='https://github.com/Absolu242'>
+              <a href="https://github.com/Absolu242">
                 {" "}
-                <i className='bx bxl-github' />
+                <i className="bx bxl-github" />
               </a>
             </li>
           </ul>
         </NavIcons>
       </Footer>
     </Wrapper>
-  )
+  );
 }

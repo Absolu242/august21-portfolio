@@ -1,14 +1,13 @@
-import Document, { Html, Head, Main, NextScript } from "next/document"
+import Document, { Html, Head, Main, NextScript } from "next/document";
 
 class MyDocument extends Document {
   render() {
     return (
-      <Html lang='en'>
+      <Html lang="en">
         <Head>
-        
           <link
-            href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css'
-            rel='stylesheet'
+            href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+            rel="stylesheet"
           ></link>
         </Head>
         <body>
@@ -16,8 +15,8 @@ class MyDocument extends Document {
           <NextScript />
         </body>
       </Html>
-    )
+    );
   }
 }
 
-export default MyDocument
+export default MyDocument;
