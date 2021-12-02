@@ -90,7 +90,7 @@ const NavIcons = styled.div`
     button {
       background: none;
       border: none;
-      color: #fff;
+      color: var(--grey-color);
       font-size: 1.5rem;
       font-weight: 600;
       cursor: pointer;
@@ -145,7 +145,7 @@ export default function NavBar() {
         </ul>
 
         <a
-          href="https://drive.google.com/file/d/1vuyphpoC0CCRlgISwi1eYQpK-bvu2hFP/view?usp=sharing"
+          href="https://drive.google.com/file/d/1HY-UVPjBLznSl4c31QGijh9GHw2cVxcE/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
         >
