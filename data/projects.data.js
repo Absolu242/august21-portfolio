@@ -12,7 +12,7 @@ export const projectsList = [
     id: "02",
     name: "Saasdunk",
     tech: "Reactjs,Chackra-UI...",
-    live: "https://learningui.netlify.app",
+    live: "https://saasdunk.netlify.app",
     github: "https://github.com/Absolu242/saasdunk-dashboard",
     image: "saasdunk.png",
     private: true,
