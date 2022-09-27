@@ -8,6 +8,15 @@ export const projectsList = [
     image: "board.jpg",
     private: true,
   },
+  {
+    id: "02",
+    name: "Saasdunk",
+    tech: "Reactjs,Chackra-UI...",
+    live: "https://learningui.netlify.app",
+    github: "https://github.com/Absolu242/saasdunk-dashboard",
+    image: "saasdunk.png",
+    private: true,
+  },
 
   {
     id: "0",
@@ -19,22 +28,22 @@ export const projectsList = [
     private: true,
   },
 
-  {
-    id: "1",
-    name: "Rogan Digital Agency",
-    tech: "Nextjs,styled-components ...",
-    live: "https://rogandigital.netlify.app",
-    github: "https://github.com/Absolu242/rogan",
-    image: "rogan.jpg",
-  },
-  {
-    id: "2",
-    name: "Airbnb Clone",
-    tech: "Next js,styled-components",
-    live: "https://airbclone.netlify.app",
-    github: "#",
-    image: "airbnb.jpg",
-  },
+  // {
+  //   id: "1",
+  //   name: "Rogan Digital Agency",
+  //   tech: "Nextjs,styled-components ...",
+  //   live: "https://rogandigital.netlify.app",
+  //   github: "https://github.com/Absolu242/rogan",
+  //   image: "rogan.jpg",
+  // },
+  // {
+  //   id: "2",
+  //   name: "Airbnb Clone",
+  //   tech: "Next js,styled-components",
+  //   live: "https://airbclone.netlify.app",
+  //   github: "#",
+  //   image: "airbnb.jpg",
+  // },
 
   {
     id: "3",
@@ -45,14 +54,14 @@ export const projectsList = [
     image: "dayne.jpg",
   },
 
-  {
-    id: "4",
-    name: "Monalisa Hotel",
-    tech: "React ,Redux , Sass , React-router-dom",
-    live: "https://monalisahotel.netlify.app/",
-    github: "https://github.com/Absolu242/monalisa-hotel",
-    image: "monalisa2.jpg",
-  },
+  // {
+  //   id: "4",
+  //   name: "Monalisa Hotel",
+  //   tech: "React ,Redux , Sass , React-router-dom",
+  //   live: "https://monalisahotel.netlify.app/",
+  //   github: "https://github.com/Absolu242/monalisa-hotel",
+  //   image: "monalisa2.jpg",
+  // },
 
   {
     id: "5",

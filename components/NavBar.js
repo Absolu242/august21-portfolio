@@ -145,7 +145,7 @@ export default function NavBar() {
         </ul>
 
         <a
-          href="https://drive.google.com/file/d/1HY-UVPjBLznSl4c31QGijh9GHw2cVxcE/view?usp=sharing"
+          href="https://drive.google.com/file/d/172bpRbqP66LeBLIeDiRXe3thIlNq9emI/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -157,23 +157,37 @@ export default function NavBar() {
       <NavIcons>
         <ul className="center">
           <li>
-            <a href="https://linkedin.com/in/rahan-bakala-bouess-25714a204">
+            <a
+              href="https://linkedin.com/in/rahan-bakala-bouess-25714a204"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {" "}
               <i className="bx bxl-linkedin-square" />
             </a>
           </li>
           <li>
-            <a href="https://github.com/Absolu242">
+            <a
+              href="https://github.com/Absolu242"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {" "}
               <i className="bx bxl-github" />
             </a>
           </li>
-          <button
-            onClick={() => (window.location = "mailto:rahanbouess@outlook.com")}
-          >
-            rahanbouess@outlook.com
-          </button>
-          <p></p>
+          <li>
+            <button
+              style={{
+                fontSize: "3rem",
+              }}
+              onClick={() =>
+                (window.location = "mailto:rahanbouess@outlook.com")
+              }
+            >
+              <i className="bx bxs-envelope" />
+            </button>
+          </li>
         </ul>
       </NavIcons>
     </Nav>
