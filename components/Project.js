@@ -1,6 +1,4 @@
-import * as React from "react";
 import styled from "styled-components";
-import {Chrome, Github} from "@styled-icons/boxicons-logos";
 
 const Container = styled.div`
   position: relative;
@@ -33,8 +31,8 @@ const Container = styled.div`
 
   .links {
     a {
-      padding-right: 2rem;
-      font-size: 1.6rem;
+      padding-right: 1rem;
+      font-size: 3rem;
       color: var(--border-color);
       &:hover {
         color: var(--grey-color);
@@ -56,19 +54,11 @@ export default function Project({ item }) {
       </a>
       <p className="tech">{item.tech}</p>
       <div className="links">
-        <a
-          href={item.live}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Chrome size={'3rem'} />
+        <a href={item.live} target="_blank" rel="noopener noreferrer">
+          <i className="bx bxl-chrome" />
         </a>
-        <a
-          href={item.github}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Github size={'3rem'}/>
+        <a href={item.github} target="_blank" rel="noopener noreferrer">
+          <i className="bx bxl-github" />
         </a>
       </div>
     </Container>

@@ -1,12 +1,9 @@
-import * as React from "react";
 import Books from "../components/Books";
 import Layout from "../components/Layout";
 import Projects from "../components/Projects";
 import { HomeSection } from "../styles/Home.styles";
-import "../styles/globals.css";
-import MetaTags from "../components/Meta";
 
-const IndexPage = () => {
+export default function Home() {
   return (
     <Layout>
       <HomeSection className="about">
@@ -36,11 +33,10 @@ const IndexPage = () => {
               <h2>Tech I work With :</h2>
             </div>
             <p className="stack">
-              HTML5, CSS3, SCSS, JavaScript, TypeScript, <br />
-              React , Next , emotion , Figma ,Git / Github, <br />
-              Jest ,Storybook, NPM, React Native, Node , Express, <br />
-              MongoDB, Redux, Redux-toolkit, Firebase , Photoshop, <br />
-              Lunacy,Linux
+              HTML, CSS, SCSS, React, Nextjs, <br />
+              Node, Express, MongoDB, React Native,
+              <br />
+              Jest, Git /Github, Formik, Redux, Redux-toolkit
             </p>
           </div>
         </div>
@@ -52,10 +48,4 @@ const IndexPage = () => {
       <Books />
     </Layout>
   );
-};
-
-export default IndexPage;
-
-export const Head = () => (
-  <MetaTags/>
-);
+}

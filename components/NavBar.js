@@ -1,11 +1,11 @@
-import * as React from "react";
+import { useRouter } from "next/dist/client/router";
+import Link from "next/link";
 import styled from "styled-components";
 
 const Nav = styled.div`
   position: relative;
   padding: 2rem 0 3rem 0;
 `;
-
 const NavLogo = styled.div`
   position: relative;
 
@@ -14,7 +14,6 @@ const NavLogo = styled.div`
     font-weight: 500;
   }
 `;
-
 const NavList = styled.div`
   position: relative;
   display: flex;
@@ -112,28 +111,41 @@ const NavIcons = styled.div`
 `;
 
 export default function NavBar() {
+  const router = useRouter();
+
+  const { pathname } = router;
+
   return (
     <Nav>
-      <NavLogo >
+      <NavLogo className="center">
         <p>Rahan Bouess</p>
       </NavLogo>
 
       <NavList className="center">
         <ul>
           <li>
-            <a>Home</a>
+            <Link href="/">
+              <a className={pathname === "/" ? "active" : ""}>Home</a>
+            </Link>
           </li>
 
           <li>
-            <a href="#projects">Work</a>
+            <a
+              href="#projects"
+              className={pathname === "/projects" ? "active" : ""}
+            >
+              Work
+            </a>
           </li>
           <li>
-            <a href="#books">Books </a>
+            <a href="#books" className={pathname === "/books" ? "active" : ""}>
+              Books{" "}
+            </a>
           </li>
         </ul>
 
         <a
-          href="https://drive.google.com/file/d/1avYLQe5CY0ixH5sgAGw4VXcAkimSIOeK/view?usp=sharing"
+          href="https://drive.google.com/file/d/172bpRbqP66LeBLIeDiRXe3thIlNq9emI/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -170,7 +182,7 @@ export default function NavBar() {
                 fontSize: "3rem",
               }}
               onClick={() =>
-                (window.location = "mailto:rahanbakala@outlook.com")
+                (window.location = "mailto:rahanbouess@outlook.com")
               }
             >
               <i className="bx bxs-envelope" />

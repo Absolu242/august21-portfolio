@@ -5,7 +5,7 @@ export const projectsList = [
     tech: "Reactjs,styled-components..",
     live: "https://ecomboard.netlify.app",
     github: "https://github.com/Absolu242/ecommerce-dashboard",
-    image: "/static/board.jpg",
+    image: "board.jpg",
   },
   {
     id: "02",
@@ -13,7 +13,7 @@ export const projectsList = [
     tech: "Reactjs,Chackra-UI...",
     live: "https://saasdunk.netlify.app",
     github: "https://github.com/Absolu242/saasdunk-dashboard",
-    image: "/static/saasdunk.png",
+    image: "saasdunk.png",
   },
 
   {
@@ -22,7 +22,7 @@ export const projectsList = [
     tech: "Reactjs,styled-components..",
     live: "https://learningui.netlify.app",
     github: "#",
-    image: "/static/learn.jpg",
+    image: "learn.jpg",
   },
 
   // {
@@ -48,7 +48,7 @@ export const projectsList = [
     tech: "Next js,styled-components,Formik ...",
     live: "https://daynedigital.netlify.app",
     github: "https://github.com/Absolu242/Dayne-digital",
-    image: "/static/dayne.jpg",
+    image: "dayne.jpg",
   },
 
   // {
@@ -66,6 +66,6 @@ export const projectsList = [
     tech: "React,Redux ,Sass ...",
     live: "https://shila-ecom.netlify.app",
     github: "https://github.com/Absolu242/shila",
-    image: "/static/shila.jpg",
+    image: "shila.jpg",
   },
 ];
