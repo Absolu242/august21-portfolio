@@ -4,9 +4,8 @@ export const projectsList = [
     name: "E-commerce Dashboard",
     tech: "Reactjs,styled-components..",
     live: "https://ecomboard.netlify.app",
-    github: "#",
+    github: "https://github.com/Absolu242/ecommerce-dashboard",
     image: "board.jpg",
-    private: true,
   },
   {
     id: "02",
@@ -15,17 +14,15 @@ export const projectsList = [
     live: "https://saasdunk.netlify.app",
     github: "https://github.com/Absolu242/saasdunk-dashboard",
     image: "saasdunk.png",
-    private: true,
   },
 
   {
-    id: "0",
+    id: "03",
     name: "Online Learning Platform",
     tech: "Reactjs,styled-components..",
     live: "https://learningui.netlify.app",
     github: "#",
     image: "learn.jpg",
-    private: true,
   },
 
   // {
@@ -46,7 +43,7 @@ export const projectsList = [
   // },
 
   {
-    id: "3",
+    id: "04",
     name: "Dayne Digital",
     tech: "Next js,styled-components,Formik ...",
     live: "https://daynedigital.netlify.app",
@@ -64,7 +61,7 @@ export const projectsList = [
   // },
 
   {
-    id: "5",
+    id: "05",
     name: "Shila ecommerce",
     tech: "React,Redux ,Sass ...",
     live: "https://shila-ecom.netlify.app",
