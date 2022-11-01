@@ -1,3 +1,4 @@
+import * as React from "react";
 import styled from "styled-components";
 import Project from "./Project";
 import { projectsList } from "../data/projects.data";
